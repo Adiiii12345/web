@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam</title>
+    <link rel="icon" href="fav.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style>
+    
+
+    body{
+        background: #3ACECD;
+        background: -moz-linear-gradient(left, #3ACECD 0%, #1C6EA4 100%, #2FC5C3 100%);
+        background: -webkit-linear-gradient(left, #3ACECD 0%, #1C6EA4 100%, #2FC5C3 100%);
+        background: linear-gradient(to right, #3ACECD 0%, #1C6EA4 100%, #2FC5C3 100%);
+    }
+    .div2{
+        margin-left: 10vh;
+    }
+    .acs{
+        font-family: alap;
+        font-size: 19vh;
+        text-align: center;
+        color: rgb(0, 255, 255);
+        -webkit-text-stroke: 1px black;
+        /* display:none; */
+        animation:anim;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        margin-bottom: 9vh;
+
+    }
+    .insta{
+        width: 12vh;
+        margin-left: 250px;
+        margin-top: -200px;
+        /* animation: blinker 1s linear infinite; */
+    }
+    .insta:hover{
+        border:rgb(18, 124, 185) solid 2px;
+        border-radius: 25px;
+    }        
+
+    .leiras{
+        float:none;
+        margin-left: -300px;
+        margin-top: 25px;
+        font-size: 5vh;
+        font-family: alap;
+        color: aqua;
+        -webkit-text-stroke: 1px black;
+    }
+    .snap{
+        margin-top: 100px;
+        font-family: alap;
+        font-size: 5vh;
+        color: aqua;
+        -webkit-text-stroke: 1px black;
+        margin-left: 73vh;
+
+    }
+    .snapikon:hover{
+        border:rgb(72, 157, 255) solid 2px;
+        border-radius: 25px;
+    }
+    .snapikon{
+        width: 12vh;
+        padding: -20vh;
+        margin-left: 97vh;
+        margin-top: -20vh;
+
+    }
+    @keyframes anim{
+        from {opacity: 0%;}
+        to {opacity: 100%;}
+    }
+    @font-face {
+        font-family: alap;
+        src: url(Adamtipus.ttf)
+        }
+    @keyframes blinker {
+  50% {
+    opacity: 0;
+  }}
+  @media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<body>
+    <div id="main">
+    <h1 class ="acs">Adam</h1>
+    <center><div>
+    <table><tr><h2 class="leiras">Instagram oldalam</h2>
+    <a target="_blank" href="https://www.instagram.com/sinorovits.adam/"><img class="insta" src="instagram.png" alt="pog"></a></tr></table>
+    
+
+    </div></center> 
+    <div class="div2">
+        <h2 class="snap">Snapchat</h2>
+        <img onclick="changeImage()" class="snapikon" id="snapikon_valtozo" src="snap.png" alt="snapniga">
+        
+    
+    
+    
+    
+    </div>
+<script> 
+    var alma= 1;
+    function changeImage() {
+        if (alma==1){
+            document.getElementById("snapikon_valtozo").src ="snap2.png";
+            alma=0; 
+        } else {
+            document.getElementById("snapikon_valtozo").src ="snap.png";
+            alma=1;
+        }
+        
+
+}   
+</script>
+</div>
+</body>
+</html>
